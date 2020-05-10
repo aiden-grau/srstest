@@ -8,6 +8,7 @@
         "beelab/recaptcha2-bundle": "^2.1",
         "friendsofsymfony/rest-bundle": "^2.7",
         "jms/serializer-bundle": "^2.4",
+        "lexik/jwt-authentication-bundle": "^2.6",
         "sensio/framework-extra-bundle": "^5.5",
         "symfony/asset": "4.4.*",
         "symfony/console": "4.4.*",

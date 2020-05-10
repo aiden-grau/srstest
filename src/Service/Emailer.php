@@ -2,14 +2,16 @@
 // src/Service/Emailer.php
 namespace App\Service;
 
-use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mailer\Bridge\Google\Transport\GmailSmtpTransport;
+use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mime\Email;
 
 class Emailer
 {
 
-    public function __construct(MailerInterface $mailer) {
-      $this->mailer = $mailer;
+    public function __construct() {
+      $transport = new GmailSmtpTransport('srstestemail@gmail.com', 'srstest123');
+      $this->mailer = new Mailer($transport);
     }
 
     public function sendUserEmail($data)

@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Contact;
+use App\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Form\ContactType;
 use Symfony\Component\HttpFoundation\Response;

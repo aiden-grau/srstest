@@ -1,5 +1,5 @@
 # Read the documentation: https://symfony.com/doc/master/bundles/FOSRestBundle/index.html
-fos_rest: null
+#fos_rest: null
 #    param_fetcher_listener:  true
 #    allowed_methods_listener:  true
 #    routing_loader: true
@@ -16,7 +16,7 @@ fos_rest: null
 # Read the documentation: https://symfony.com/doc/master/bundles/FOSRestBundle/index.html
 fos_rest:
     routing_loader:
-        default_format: jsno
+        default_format: json
         include_format: false
     body_listener: true
     format_listener:
